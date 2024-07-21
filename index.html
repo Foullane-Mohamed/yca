@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class=" flex z-10 w-[100%]  items-center justify-between  md:justify-around  py-2 px-6 md:pr-[150px]">
+      <div class="logo w-3/12 flex items-center justify-center text-lg font-medium text-white">oliver</div>
+      <div class=" nav_menu z-10 md:static  flex w-5/12 md:w-11/12  items-center  justify-between  text-sm font-medium p-[12px] ">
+        <ul class="ulContainer flex w-11/12 lg:w-8/12  justify-between md:pl-[80px] ">
+          <li><a class="nav_item active_color font-medium  text-lg" href="#">Home</a></li>
+        <li><a class="nav_item font-medium  text-lg" href="#">About</a></li>
+        <li><a class="nav_item font-medium  text-lg" href="#">pages <i class="fas fa-caret-down"></i></a>
+           <div class="dropdown-menu">
+            <ul class="">
+              <li><a class="nav_item" href="#">page-1</a></li>
+              <li><a class="nav_item" href="#">page-2</a></li>
+              <li><a class="nav_item" href="#">page-3</a></li>
+            </ul>
+          </div>
+           
+        </li>
+        <li><a class="nav_item font-medium text-lg" href="#">Services</a></li>
+        <li><a class="nav_item font-medium text-lg" href="#">Contact</a></li>
+
+        </ul>
+        
+        <div class="icons   ">
+          <i class="fa-solid fa-user text-[2.5em] text-[#fff] md:ml-[25px] cursor-pointer"></i>
+        </div>
+      </div>
+      
+      <!-- humberger bar -->
+      <div class="humberger  cursor-pointer block md:hidden transition-all w-[35px]  ">
+        <span class="bar m-[5px] block h-[3px] bg-black rounded-full"></span>
+        <span class="bar m-[5px] block h-[3px] bg-black rounded-full"></span>
+        <span class="bar m-[5px] block h-[3px] bg-black rounded-full"></span>
+      </div>
+      <!--// humberger bar //-->
+
+    </nav>  
+    <!-- // NavBar // -->
+
+    <div class="slide-container">
+	
+      <div class="slides">
+
+        <img src="back.jpg" class="active">
+        <img src="olives1.jpg">
+        <img src="olives2.jpg">
+        <img src="olives3.jpg">
+        
+      </div>
+    
+      <div class="buttons">
+        <span class="next">&#10095;</span>
+        <span class="prev">&#10094;</span>
+      </div>
+    
+      <div class="dotsContainer">
+        <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+        <div class="dot" attr='2' onclick="switchImage(this)"></div>
+        <div class="dot" attr='3' onclick="switchImage(this)"></div>
+      </div>
+    
+    </div>
+  
+    <div class="cards">
+      <div class="card-hover">
+        <div class="card-hover__content">
+          <h3 class="card-hover__title">
+            Make your <span>choice</span> right now!
+          </h3>
+          <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+          <a href="#" class="card-hover__link">
+            <span>Learn How</span>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>        
+          </a>
+        </div>
+        <div class="card-hover__extra">
+          <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+        </div>
+        <img class="img-card" src="./moahmed foullane.jpg" alt="">
+      </div>
+      <div class="card-hover">
+        <div class="card-hover__content">
+          <h3 class="card-hover__title">
+            Make your <span>choice</span> right now!
+          </h3>
+          <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+          <a href="#" class="card-hover__link">
+            <span>Learn How</span>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>        
+          </a>
+        </div>
+        <div class="card-hover__extra">
+          <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+        </div>
+        <img class="img-card" src="./moahmed foullane.jpg" alt="">
+      </div>
+      <div class="card-hover">
+        <div class="card-hover__content">
+          <h3 class="card-hover__title">
+            Make your <span>choice</span> right now!
+          </h3>
+          <p class="card-hover__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia quisquam doloremque nostrum laboriosam, blanditiis libero corporis nulla a aut?</p>
+          <a href="#" class="card-hover__link">
+            <span>Learn How</span>
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>        
+          </a>
+        </div>
+        <div class="card-hover__extra">
+          <h4>Learn <span>now</span> and get <span>40%</span> discount!</h4>
+        </div>
+        <img class="img-card" src="./moahmed foullane.jpg" alt="">
+      </div>
+    </div>
+    
+  
+    <script src="script.js"></script>
+  </body>
+</html>
